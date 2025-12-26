@@ -1,28 +1,22 @@
-import React from 'react'
-
 const Footer = () => {
   return (
-    <>
-      <div className=' min-h-[6rem] flex flex-col items-center justify-center w-full text-center text-white bg-black'>
-        <h1 className='text-xl'>Connect With me!</h1>
-        <div className='gap-6 flex flex-wrap justify-center mt-2'>
-          <a href="tel:+918076569257">
-            <img className='h-12 w-8 sm:h-16 sm:w-10' src="/call.svg" alt="" /> 
-          </a>
-          <a href="https://github.com/US7103">
-            <img className='h-12 w-9 sm:h-16 sm:w-11' src="/git.svg" alt="" />
-          </a>
-          <a href="mailto:savarnutkarsh@gmail.com">
-            <img className='h-12 w-8 sm:h-16 sm:w-10' src="/mail.svg" alt="" /> 
-          </a>
-          <a href="https://www.linkedin.com/in/utkarsh-savarn-6620681aa/">
-            <img className='h-12 w-8 sm:h-16 sm:w-10' src="/link.svg" alt="" /> 
-          </a>
-        </div>
-      </div>
-    </>
-  )
-}
+    <footer id="contact" className="bg-black text-white py-10 text-center">
+      <h2 className="text-2xl font-semibold">Let’s Connect</h2>
 
-export default Footer
+      <div className="flex gap-6 justify-center mt-4">
+        <a href="tel:+918076569257">📞</a>
+        <a href="mailto:savarnutkarsh@gmail.com">📧</a>
+        <a href="https://github.com/US7103">🐙</a>
+        <a href="https://www.linkedin.com/in/utkarsh-savarn-6620681aa/">🔗</a>
+      </div>
+
+      <p className="text-gray-400 mt-6 text-sm">
+        © {new Date().getFullYear()} — Developed By Utkarsh Savarn
+      </p>
+    </footer>
+  );
+};
+
+export default Footer;
+
 

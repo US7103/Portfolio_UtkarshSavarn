@@ -1,17 +1,20 @@
-import React from 'react'
-import { Link } from "react-router-dom";
+import React from "react";
 
-
-
-
-const Navbar = (props) => {
+const Navbar = ({ name }) => {
   return (
-    <div className=' bg-zinc-800 items-center justify-center flex p-3  text-white h-10 '>
-    <h3 className=' text-center items-center text-cyan-300 px-6 text-3xl  font-medium'>{props.name}</h3>
-   
-    </div>
-  )
-} 
+    <nav className="bg-black text-white py-4 px-6 flex justify-between sticky top-0 z-50 border-b border-gray-800">
+      <h3 className="text-2xl font-semibold text-cyan-400">{name}</h3>
 
+      <div className="flex gap-6 text-gray-300">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  );
+}
 
-export default Navbar
+export default Navbar;
+
